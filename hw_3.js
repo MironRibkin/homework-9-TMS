@@ -39,8 +39,18 @@ console.log(shouldGoToWork);
 
 //Task 5
 let number = prompt("Введите число")
-let output = number % 3 === 0 && number % 5 === 0 ? "FizBuz" : number % 3 === 0 ? "Buz" : number % 5 === 0 ? "Fiz" : "Фигня какаята";
-console.log(output);
+if (number % 3 === 0 && number % 5 === 0) {
+    console.log("FizBuz")
+} else if (number % 3 === 0) {
+    console.log("Buz")
+} else if (number % 5 === 0) {
+    console.log("Fiz")
+} else {
+    console.log("фигная какаята!")
+}
+
+// let output = number % 3 === 0 && number % 5 === 0 ? "FizBuz" : number % 3 === 0 ? "Buz" : number % 5 === 0 ? "Fiz" : "Фигня какаята";
+// console.log(output);
 
 
 //Task 6
@@ -56,17 +66,21 @@ if (age > 16 && age < 18) {
 
 //Task 7
 let site = prompt("В какую сторону светa вы бы хотели отправиться?")
+const south = "юг";
+const north = "север";
+const east = "запад";
+const west = "восток";
 switch (site) {
-    case "юг":
+    case south:
         console.log("на юг пойдешь счастье найдешь")
         break;
-    case "север":
+    case north:
         console.log("на север пойдешь много денег найдешь")
         break;
-    case "запад":
+    case east:
         console.log("на запад пойдешь верного друга найдешь")
         break;
-    case "восток":
+    case west:
         console.log("на восток пойдешь разработчиком станешь")
         break;
     default:
@@ -94,7 +108,7 @@ alert("(((" + n1 + " - " + n2 + ") + " + n3 + ") * " + n4 + ") / " + n5 + " = " 
 
 //Task 3
 let lesenka = "#";
-for (let i = 1; i <= 10; i++){
+for (let i = 1; i <= 10; i++) {
     console.log(lesenka)
     lesenka += "#";
 }
