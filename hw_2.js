@@ -8,12 +8,12 @@ console.log(xyz)
 
 
 //Task 2
-const sekond = 60;       //- количество секунд в минуте
-const minute = 60;       //- количество минут в часу
-const hour = 24;         //- количество часов в сутках
-const year = 365;        //- количество суток в году
+const SECOND = 60;       //- количество секунд в минуте
+const MINUTE = 60;       //- количество минут в часу
+const HOUR = 24;         //- количество часов в сутках
+const YEAR = 365;        //- количество суток в году
 
-let myAgeInSeconds = sekond * minute * hour * year * 23;
+let myAgeInSeconds = SECOND * MINUTE * HOUR * YEAR * 23;
 console.log(myAgeInSeconds)
 
 
@@ -42,24 +42,24 @@ console.log("" + a + b + " " + c)
 
 
 //Task 5
-let t5_1 = "доступ";
-let t5_2 = "морпех";
-let t5_3 = "наледь"
-let t5_4 = "попрек"
-let t5_5 = "рубило"
-let lengthWords = t5_1.length + t5_2.length + t5_3.length + t5_4.length + t5_5.length;
+let word1 = "доступ";
+let word2 = "морпех";
+let word3 = "наледь"
+let word4 = "попрек"
+let word5 = "рубило"
+let lengthWords = word1.length + word2.length + word3.length + word4.length + word5.length;
 console.log(lengthWords);
 // 2 способ
-console.log((t5_1 + t5_2 + t5_3 + t5_4 + t5_5).length)
+console.log((word1 + word2 + word3 + word4 + word5).length)
 
 
 //Task 6
 let stroka = "пожелые коты";
 let numer = 18;
 let boolean = true;
-console.log(`Variable: ${Object.keys({stroka})[0]} have type: ${typeof stroka}`);
-console.log(`Variable: ${Object.keys({numer})[0]} have type: ${typeof numer}`);
-console.log(`Variable: ${Object.keys({boolean})[0]} have type: ${typeof boolean}`);
+console.log(`Variable: stroka have type: ${typeof stroka}`);
+console.log(`Variable: numer have type: ${typeof numer}`);
+console.log(`Variable: boolean have type: ${typeof boolean}`);
 
 //Task 7
 let name = prompt("Введите ваше имя ", "Имя");
